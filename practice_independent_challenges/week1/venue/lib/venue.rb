@@ -8,5 +8,17 @@ class Venue
     @patrons = []
   end
 
+  def add_patron(name)
+    @patrons << name
+  end
+
+  def yell_at_patrons
+    upcased = []
+    @patrons.each do |name|
+        upcased << name.upcase
+    end
+    upcased
+  end
+
 
 end
