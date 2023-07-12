@@ -1,10 +1,12 @@
 class Venue
-  attr_accessor :name, :capacity
+  attr_accessor :name, :capacity, :patrons
 
 
-  def initialize(name,capacity)
+  def initialize(name, capacity)
     @name = name
     @capacity = capacity
+    @patrons = []
   end
+
 
 end
